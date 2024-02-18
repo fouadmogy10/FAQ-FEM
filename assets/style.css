@@ -87,4 +87,11 @@ box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
   .background{
     background-image: url("../assets/images/background-pattern-mobile.svg");
   }
+  .quistionn-title{
+    font-size: 14px;
+  }
+  .question-desc {
+    font-size: 14px;
+    margin: 20px 0;
+  }
 }
