@@ -1,0 +1,90 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--Light-pink);
+  padding: 0px 24px;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  top: 0;
+  z-index: -1;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+ display: flex;
+width: 600px;
+padding: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+border-radius: 16px;
+background: var(--White, #FFF);
+box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.quistionn-title {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.quistionn-title:hover{
+  color: var(--Grayish-purple);
+}
+.question-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--Grayish-purple);
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+  margin: 24px 0;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+.btn img {
+  cursor: pointer;
+}
+@media (max-width:768px) {
+  .background{
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+  }
+}
